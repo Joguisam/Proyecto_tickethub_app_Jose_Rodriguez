@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ticket Office - Admin Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+</head>
+<body>
+<aside>
+<div class="sidebar-header">
+<div class="logo">Ticket Office</div>
+<div class="user-profile">
+<div class="avatar">
+<span class="material-symbols-outlined">person</span>
+</div>
+<div class="user-info">
+<h3>Admin Portal</h3>
+<p>Terminal 01</p>
+</div>
+</div>
+</div>
+<nav>
+<a class="nav-link active" href="#">
+<span class="material-symbols-outlined">category</span>
+                Categorías
+            </a>
+<a class="nav-link" href="#">
+<span class="material-symbols-outlined">confirmation_number</span>
+                Eventos
+            </a>
+<a class="nav-link" href="#">
+<span class="material-symbols-outlined">payments</span>
+                Ventas
+            </a>
+</nav>
+</aside>
+<main>
+<header>
+<div class="top-nav">
+<button class="top-nav-btn active">Panel</button>
+<button class="top-nav-btn">Usuarios</button>
+</div>
+<div class="header-actions">
+<button class="icon-btn">
+<span class="material-symbols-outlined">help</span>
+</button>
+<button class="icon-btn">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<button class="btn-primary">
+<span class="material-symbols-outlined">add</span>
+                    Nuevo Evento
+                </button>
+</div>
+</header>
+<section class="welcome-section">
+<div class="welcome-text">
+<span class="system-label">Sistema de Control Central</span>
+<h1>Bienvenido, Admin</h1>
+<p>Gestiona la infraestructura de eventos y monitorea el flujo de ingresos en tiempo real desde tu terminal de comando.</p>
+</div>
+<div class="server-status">
+<div class="server-status-info">
+<p class="server-status-label">Estado del Servidor</p>
+<p class="server-status-value">OPERACIONAL</p>
+</div>
+<div class="status-dot"></div>
+</div>
+</section>
+<div class="stats-grid">
+<div class="stat-card">
+<p class="stat-label">Ventas del Día</p>
+<div class="stat-value-container">
+<span class="stat-value">$12.4k</span>
+<span class="stat-growth">+18%</span>
+</div>
+</div>
+<div class="stat-card">
+<p class="stat-label">Ventas del Mes</p>
+<div class="stat-value-container">
+<span class="stat-value">$342.1k</span>
+<span class="stat-growth">+24%</span>
+</div>
+</div>
+</div>
+<div class="events-row">
+<div class="hero-event">
+<span class="badge-soldout">SOLD OUT</span>
+<h2>Neon Nights Festival</h2>
+<p>El evento más grande de la temporada está a punto de comenzar. Revisa la asignación de accesos.</p>
+<button class="btn-outline">Ver Detalles</button>
+</div>
+<div class="upcoming-list">
+<h3>Próximos eventos</h3>
+<div class="event-item">
+<div class="event-date">
+<span>12</span>
+<span>OCT</span>
+</div>
+<div class="event-details">
+<h4>Synthwave Summit</h4>
+<p>Arena Kinetic • 20:00</p>
+</div>
+<div class="event-price">$85</div>
+</div>
+<div class="event-item event-item-secondary">
+<div class="event-date">
+<span>15</span>
+<span>OCT</span>
+</div>
+<div class="event-details">
+<h4>Digital Opera</h4>
+<p>Teatro Monolith • 19:30</p>
+</div>
+<div class="event-price">$120</div>
+</div>
+<div class="event-item event-item-tertiary">
+<div class="event-date">
+<span>22</span>
+<span>OCT</span>
+</div>
+<div class="event-details">
+<h4>Pixel Art Expo</h4>
+<p>Galería Central • 10:00</p>
+</div>
+<div class="event-price">FREE</div>
+</div>
+</div>
+</div>
+<section class="transactions-section">
+<div class="section-header">
+<h3>Registro de Transacciones</h3>
+<button class="icon-btn filter-btn">
+<span class="material-symbols-outlined">filter_list</span>
+                    Filtrar
+                </button>
+</div>
+<table>
+<thead>
+<tr>
+<th>ID Operación</th>
+<th>Evento</th>
+<th>Usuario</th>
+<th>Monto</th>
+<th class="status-cell">Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>#TRX-9902</td>
+<td>Neon Nights Festival</td>
+<td>m.anderson@matrix.com</td>
+<td class="amount-cell">$170.00</td>
+<td class="status-cell"><span class="status-badge">Completado</span></td>
+</tr>
+<tr>
+<td>#TRX-9901</td>
+<td>Synthwave Summit</td>
+<td>julia.v@cyber.net</td>
+<td class="amount-cell">$85.00</td>
+<td class="status-cell"><span class="status-badge">Completado</span></td>
+</tr>
+<tr>
+<td>#TRX-9899</td>
+<td>Digital Opera</td>
+<td>k.stewart@void.io</td>
+<td class="amount-cell">$240.00</td>
+<td class="status-cell"><span class="status-badge pending">Pendiente</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<footer>
+<div>© 2024 Kinetic Monolith Systems</div>
+<div class="footer-links">
+<a href="#">Privacidad</a>
+<a href="#">Términos</a>
+<a href="#">Soporte</a>
+</div>
+</footer>
+</main>
+</body></html>
